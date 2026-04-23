@@ -15,6 +15,7 @@
     <!--#endif-->
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="Ulid" />
     <!--#if (UsePostgreSQL)-->
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
     <!--#endif-->

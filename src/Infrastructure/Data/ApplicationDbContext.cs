@@ -15,6 +15,14 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplica
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
 
+    public DbSet<LogEntry> LogEntries => Set<LogEntry>();
+
+    public DbSet<ErrorCluster> ErrorClusters => Set<ErrorCluster>();
+
+    public DbSet<Deployment> Deployments => Set<Deployment>();
+
+    public DbSet<Insight> Insights => Set<Insight>();
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

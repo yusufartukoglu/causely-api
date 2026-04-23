@@ -8,5 +8,13 @@ public interface IApplicationDbContext
 
     DbSet<TodoItem> TodoItems { get; }
 
+    DbSet<LogEntry> LogEntries { get; }
+
+    DbSet<ErrorCluster> ErrorClusters { get; }
+
+    DbSet<Deployment> Deployments { get; }
+
+    DbSet<Insight> Insights { get; }
+
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
